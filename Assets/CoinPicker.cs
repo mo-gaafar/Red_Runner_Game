@@ -15,4 +15,8 @@ public class CoinPicker : MonoBehaviour {
             Destroy (other.gameObject);
         }
     }
+
+    public float GetAmountOfCoins () {
+        return coinAmount;
+    }
 }
