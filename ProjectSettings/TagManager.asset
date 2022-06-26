@@ -7,6 +7,7 @@ TagManager:
   - Coin
   - Boundary
   - LevelUp
+  - Enemy
   layers:
   - Default
   - TransparentFX

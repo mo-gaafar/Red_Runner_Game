@@ -10,5 +10,8 @@ public class PlayerCollision : MonoBehaviour {
         if (other.gameObject.tag == "LevelUp") {
             FindObjectOfType<GameManager> ().LevelUp ();
         }
+        if (other.gameObject.tag == "Enemy") {
+            FindObjectOfType<GameManager> ().EndGame ();
+        }
     }
 }
