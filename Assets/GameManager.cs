@@ -22,6 +22,13 @@ public class GameManager : MonoBehaviour {
 
     }
 
+    public void LevelUp () {
+        coinAmount = FindObjectOfType<CoinPicker> ().GetAmountOfCoins ();
+        if (coinAmount > 20) {
+            SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex + 1);
+        }
+    }
+
     public void Restart () {
         Debug.Log ("Game Restart");
         SceneManager.LoadScene (SceneManager.GetActiveScene ().name);

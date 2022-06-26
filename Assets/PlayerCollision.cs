@@ -7,5 +7,8 @@ public class PlayerCollision : MonoBehaviour {
         if (other.gameObject.tag == "Boundary") {
             FindObjectOfType<GameManager> ().EndGame ();
         }
+        if (other.gameObject.tag == "LevelUp") {
+            FindObjectOfType<GameManager> ().LevelUp ();
+        }
     }
 }

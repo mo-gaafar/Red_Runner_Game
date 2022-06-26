@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - Boundary
+  - LevelUp
   layers:
   - Default
   - TransparentFX
